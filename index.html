@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,18 @@
     <link rel="stylesheet" href="./style.css">
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Animate.css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <section class="page01">
-            <div class="logoDiv"><img class="logoImg" src="./assets/logo.png" alt="tomato logo"></div>
+    <!-- front page -->
+    <header id="page01">
+        <section class="page01Sec01">
+            <div class="logoDiv"><img class="logoImg animate__animated animate__bounce" src="./assets/logo.png"
+                    alt="tomato logo"></div>
             <div>
                 <h1 class="text-3xl font-semibold font-serif">Kerala's #1</h1>
                 <h1 class="text-3xl font-semibold font-serif">food delivery app</h1>
@@ -30,7 +38,142 @@
                 <div class="btnDiv02 cursor-pointer"><img src="./assets/ASicon02.png" alt="Apple Store Icon"></div>
             </div>
         </section>
-        <div class="scrollDiv">Scroll down <i class="fa-solid fa-angles-down"></i></div>
+        <div class="scrollDiv"><a href="#page02">Scroll down <i class="fa-solid fa-angles-down"></i></a></div>
     </header>
+    <!-- 2nd page -->
+    <main id="page02">
+        <!-- images -->
+        <img class="bgImg bgImg01" src="./assets/bg02.png" alt="bgImage01">
+        <img class="bgImg bgImg02" src="./assets/bg02.png" alt="bgImage02">
+        <img class="itemImg burgerImg" data-aos="fade-down-right" src="./assets/burger01.png" alt="BurgerImg">
+        <img class="itemImg pizzaImg" data-aos="fade-down-left" src="./assets/pizza01.png" alt="PizzaImg">
+        <img class="itemImg rollImg" data-aos="fade-down-left" src="./assets/roll01.png" alt="RollImg">
+        <!-- text -->
+        <section class="page02Sec01">
+            <h1 class="animate__animated animate__zoomInDown">Better food for</h1>
+            <h1 class="animate__animated animate__zoomInDown">more people</h1> <br>
+            <p>For over a decade, we've enabled our <br> customers to discover new tastes, <br>delivered right to their
+                doorstep</p>
+        </section>
+        <!-- container -->
+        <section class="page02Sec02">
+            <div class="articleDiv">
+                <article>
+                    <h3>1,00,000+</h3>
+                    <h5>restaurants</h5>
+                    <div class="page02Icons"><img src="./assets/HomeIcon.png" alt="Home Icon"></div>
+                </article>
+                <article>
+                    <h3>100+</h3>
+                    <h5>Cities</h5>
+                    <div class="page02Icons"><img src="./assets/LocIcon.png" alt="Home Icon"></div>
+                </article>
+                <article>
+                    <h3>1 billion+</h3>
+                    <h5>orders delivered</h5>
+                    <div class="page02Icons"><img src="./assets/PackIcon.png" alt="Home Icon"></div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer id="page03">
+        <!-- tomato logo -->
+        <img class="ftrLogoImg" src="./assets/logo.png" alt="tomato logo">
+        <div>
+            <!-- footer list content -->
+            <section class="ftrSec01">
+                <div class="content">
+                    <h3 class="ftrHead">Eternal</h3>
+                    <ul class="ftrList">
+                        <li>Tomato</li>
+                        <li>Blinkit</li>
+                        <li>District</li>
+                        <li>Hyperpure</li>
+                        <li>Feeding India</li>
+                        <li>Investor Relations</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 class="ftrHead">Learn More</h3>
+                    <ul class="ftrList">
+                        <li>Privacy</li>
+                        <li>Security</li>
+                        <li>Terms of Service</li>
+                        <li>Help & Support</li>
+                        <li>Report a Fraud</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 class="ftrHead">For Restaurants</h3>
+                    <ul class="ftrList">
+                        <li>Partner With Us</li>
+                        <li>Apps for You</li>
+                        <li>Restaurant Consulting</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 class="ftrHead">For Delivery Partners</h3>
+                    <ul class="ftrList">
+                        <li>Partner With Us</li>
+                        <li>Apps for You</li>
+                    </ul>
+                </div>
+                <!-- Social Links -->
+                <div class="content contentHead">
+                    <h3 class="ftrHead">Social Links</h3>
+                    <div class="iconCollection">
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in brand"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa-brands fa-twitter brand"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp brand"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa-brands fa-instagram brand"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa-brands fa-facebook brand"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#" target="_blank"><i class="fa-solid fa-envelope brand"></i></a>
+                        </div>
+                    </div>
+                    <div class="btnDiv ftrBtnDiv">
+                        <div class="btnDiv01 cursor-pointer"><img src="./assets/GPicon02.png" alt="Google Play Icon">
+                        </div>
+                        <div class="btnDiv02 cursor-pointer"><img src="./assets/ASicon02.png" alt="Apple Store Icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ftrSec02">
+                <hr>
+                <p class="footer-p">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+                    Privacy Policy and
+                    Content Policies. All
+                    trademarks are properties of their respective owners
+                    2018-2026 © Tomato™ Ltd. All rights reserved.</p>
+
+                <div class="arrow">
+                    <div class="icon upArrow">
+                        <a href="#page01"><i class="fa-solid fa-angle-up brand"></i></a>
+                    </div>
+                </div>
+            </section>
+    </footer>
 </body>
+
+<!-- AOS cdn script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- AOS initialize -->
+<script>
+    AOS.init();
+</script>
+
 </html>
